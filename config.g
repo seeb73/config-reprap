@@ -104,11 +104,11 @@ M307 H1 B0 S1                                  ; disable bang-bang mode for heat
 M143 H1 S270  
 
 ; Fans
-M950 F0 C"fan0" Q500                           ; create fan 0 on pin fan0 and set its frequency
-M106 P0 S0 H1 T30                              ; set fan 0 value. Thermostatic control is turned on
+M950 F1 C"fan0" Q500                           ; create fan 0 on pin fan0 and set its frequency
+M106 P1 S0 H1 T30                              ; set fan 0 value. Thermostatic control is turned on
 
-M950 F1 C"fan1" Q500                                 ; create fan 1 on pin fan1 and set its frequency
-M106 P1 S0 H-1                                       ; set fan 1 value. Thermostatic control is turned off
+M950 F0 C"fan1" Q500                                 ; create fan 1 on pin fan1 and set its frequency
+M106 P0 S0 H-1                                       ; set fan 1 value. Thermostatic control is turned off
 
 
 ; Tools
