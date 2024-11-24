@@ -6,11 +6,11 @@
 ; General preferences
 G90                                            ; send absolute coordinates...
 M83                                            ; ...but relative extruder moves
-M550 P"Anet A8 PLUS"                             ; set printer name
+M550 P"Anet A8 PLUS"                           ; set printer name
 M918 P1 E4 F2000000                            ; configure direct-connect display
 
 ; Network
-M551 P"zdzislaw"                            ; set password
+M551 P"******"                         	; set password
 M540 P00:1F:11:02:04:20                  ; set custom MAC address
 M552 P192.168.3.5 S1                     ; enable network and set IP address
 M553 P255.255.255.0                      ; set netmask
@@ -41,7 +41,7 @@ M584 X0 Y1 Z2:4 E3                               ; set drive mapping
 ; steppers by Seeb
 ;M584 X0 Y1 Z3:4 E3				; two Z motors connected to driver outputs Z and E1
 
-// dobry wynik 
+; // dobry wynik 
 ; X83.00 Y84.00
 
 M92 X81.00 Y82.00 Z405.00 E98.00		; extruder 100kroków na mm.
@@ -66,7 +66,8 @@ M208 X300 Y300 Z350 S0                         ; set axis maxima
 ; Endstops
 M574 X1 S1 P"!xstop"                            ; configure active-high endstop for high end on X via pin xstop
 M574 Y1 S1 P"!ystop"                            ; configure active-high endstop for high end on Y via pin ystop
-M574 Z1 S1 P"!zstop"                            ; configure active-high endstop for high end on Z via pin zstop
+
+; M574 Z1 S1 P"!zstop"                            ; configure active-high endstop for high end on Z via pin zstop ---------- ; zakomentowano poniżej 24.11.2024 na prośbę kolesia z discorda
 
 
 ; Z-Probe
